@@ -1,0 +1,15 @@
+
+<html>
+<body>
+  {% if search_results %}
+    <h2>Search results:</h2>
+    <ul>
+      {% for result in search_results %}
+        <li>{{ result.artistName }} - {{ result.collectionName }}</li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>No results found.</p>
+  {% endif %}
+</body>
+</html>
